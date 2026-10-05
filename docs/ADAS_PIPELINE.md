@@ -57,4 +57,6 @@ Giới hạn quan trọng: subset clear/daytime không đủ kiểm chứng dao 
 
 ## Câu nói khi trình bày
 
+Hướng mở rộng sang hệ nhiều camera được ghi riêng trong [MULTI_CAMERA_EXTENSION.md](MULTI_CAMERA_EXTENSION.md). Giữ score theo camera và vùng quan sát, không lấy trung bình score thô để kết luận hệ thống còn đủ chất lượng.
+
 “Nhóm làm block camera quality monitor, đặt sau khi thu nhận/ISP và chạy song song perception. Block trả score gắn với frame; sensor supervisor có thể dùng để cảnh báo và hỗ trợ policy tin cậy của fusion camera–radar/LiDAR. Lab hiện chỉ kiểm thử block score bằng blur mô phỏng, chưa triển khai fusion hay đo cải thiện detector.”

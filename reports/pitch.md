@@ -28,5 +28,7 @@ Mở metrics.csv, config.json và run.log trong results/average-blur-20261005-17
 
 ## Phân công trình bày
 
+Nếu được hỏi về multi-camera: tính score cho từng camera sau ISP rồi đưa vào supervisor theo timestamp và vùng nhìn. Không lấy trung bình làm kết luận duy nhất vì camera quan trọng bị mờ có thể bị các camera khác che lấp. Đây là extension trong docs/MULTI_CAMERA_EXTENSION.md, chưa phải kết quả đã chạy.
+
 - Vũ Gia Khải: problem, vị trí block trong pipeline, method và benchmark.
 - Phạm Văn Kiên: failure case, limitation, engineering decision và trade-off.
