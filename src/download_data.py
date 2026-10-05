@@ -1,5 +1,6 @@
 """Download a reproducible BDD100K subset; does not run any benchmark."""
 import hashlib
+import argparse
 import json
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -12,11 +13,14 @@ DATASET = "dgural/bdd100k"
 
 
 def main():
-    response = requests.get(f"https://huggingface.co/api/datasets/{DATASET}", timeout=60)
-    response.raise_for_status()
-    revision = response.json()["sha"]
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--revision', default='c2e7f266756bcd07b87f1a45a35937c8eac20241',
+                        help='Pinned dataset revision; use a different revision only for a new experiment')
+    args = parser.parse_args()
+    revision = args.revision
     base = f"https://huggingface.co/datasets/{DATASET}/resolve/{revision}"
     metadata = ROOT / "data/annotations/bdd100k-mirror-samples.json"
+    metadata.parent.mkdir(parents=True, exist_ok=True)
     response = requests.get(f"{base}/samples.json", timeout=120)
     response.raise_for_status()
     metadata.write_bytes(response.content)

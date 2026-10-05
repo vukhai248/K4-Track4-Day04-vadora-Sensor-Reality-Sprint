@@ -33,6 +33,14 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
 
+Sau khi clone mới, tải 50 ảnh về máy (ảnh raw không được đưa lên GitHub):
+
+```powershell
+.\.venv\Scripts\python.exe src\download_data.py
+```
+
+Script mặc định dùng đúng revision dữ liệu của benchmark đã báo cáo, kiểm tra ảnh và ghi SHA-256 vào manifest. Nếu đã có ảnh trong `data/raw/` thì không cần tải lại.
+
 Chạy 5 ảnh đã tải:
 
 ```powershell

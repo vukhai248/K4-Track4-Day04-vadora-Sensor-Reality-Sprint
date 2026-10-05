@@ -24,9 +24,9 @@ Script cần Python, requests và Pillow:
 python src/download_data.py
 ```
 
-Script truy vấn revision hiện tại và ghi lại trong manifest. Muốn lấy đúng revision của lần tải này, dùng các source_url trong manifest.json. Nếu chạy lại script về sau, subset có thể đổi khi mirror đổi.
+Script mặc định dùng revision cố định `c2e7f266756bcd07b87f1a45a35937c8eac20241`, trùng benchmark đã báo cáo. Các source_url và SHA-256 được lưu trong manifest.json. `--revision` cho phép chọn phiên bản khác cho thí nghiệm mới.
 
 ## Nguồn và quyền sử dụng
 
-Giữ nguyên ghi chú nguồn và điều khoản BDD100K trong docs/sources/bdd100k-mirror-README.md; đối chiếu dataset card gốc khi chia sẻ dữ liệu.
+Ghi chú nguồn và điều khoản được công bố trong [dataset card](https://huggingface.co/datasets/dgural/bdd100k/blob/c2e7f266756bcd07b87f1a45a35937c8eac20241/README.md); đối chiếu nguồn này khi chia sẻ dữ liệu. Bản tải về trong docs/sources/bdd100k-mirror-README.md chỉ có ở máy đã chuẩn bị lab, không nằm trên GitHub.
 Git bỏ qua ảnh raw và metadata đầy đủ để repo không mang theo các tệp tải lớn. Manifest, nhãn subset và script tải vẫn có thể lưu trong repo.
