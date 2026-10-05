@@ -13,7 +13,7 @@
 
 ## Việc cần người học hoàn tất
 
-- [ ] Hai thành viên đọc và kiểm tra kết quả, điền phần việc thực tế trong TEAMMATES.md và báo cáo cá nhân.
+- [ ] Hai thành viên đọc, kiểm tra kết quả và thực hiện phần trách nhiệm đã phân công; điều chỉnh ghi chép nếu đóng góp thực tế khác phân công.
 - [ ] Đối chiếu với giảng viên: bản đề được cung cấp yêu cầu đúng 5 thành viên/5 lượt nộp; nhóm hiện có 2 theo xác nhận người dùng. Hồ sơ hiện chưa đáp ứng điều kiện số thành viên của bản đề đó nếu không có ngoại lệ.
 - [ ] Tập pitch 3–5 phút và thực hiện trình bày.
 - [ ] Mỗi thành viên nộp đúng bản riêng và URL repo chung trên VLearn; mở lại link/tệp để kiểm tra truy cập.

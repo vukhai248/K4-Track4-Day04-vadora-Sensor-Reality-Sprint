@@ -27,6 +27,8 @@ Camera ADAS có thể vẫn xuất ảnh nhưng ảnh suy giảm độ sắc né
 
 Mục tiêu là đo phản ứng của metric, không xác định camera hỏng vật lý hay chứng minh độ chính xác detector. Không có training hoặc inference detector trong phép thử.
 
+Vị trí tích hợp đề xuất: sau thu nhận ảnh/ISP, camera quality monitor chạy song song camera perception; score gắn frame/timestamp gửi tới sensor supervisor để ghi log/cảnh báo và hỗ trợ policy tin cậy trước fusion. Radar/LiDAR có nhánh perception riêng; không phải pipeline nối tiếp radar rồi camera. Đây là kiến trúc đề xuất, không phải hệ thống VinFast được xác minh. Xem [pipeline và nguồn tham khảo](../docs/ADAS_PIPELINE.md). Benchmark hiện tại chỉ kiểm thử offline block score, chưa chạy ISP thật, supervisor hoặc fusion.
+
 ## 2. Method
 
 Nguồn: Nam, Youn, Ha (2025), [BREMOLA, Vehicles 7(1), 8](https://www.mdpi.com/2624-8921/7/1/8), DOI 10.3390/vehicles7010008; [code công khai, commit 7ba26999](https://github.com/woongchan789/BREMOLA/blob/7ba26999c265692bb8e44c5a3f2d91c06746830f/bremola.py).
@@ -95,13 +97,16 @@ Khi tín hiệu chất lượng thấp kéo dài, đề xuất cảnh báo kiể
 '''
     reports=ROOT/'reports'
     (reports/'group-report.md').write_text('# Báo cáo nhóm vadora — T1\n\n'+report,encoding='utf-8')
+    roles={1:'Chốt bài toán và vị trí trong pipeline ADAS; phụ trách dữ liệu, cấu hình/cách chạy và phần trình bày problem–method–benchmark.',
+           2:'Phụ trách rà soát bảng/plot, failure case, limitation và đề xuất engineering decision; trình bày failure–decision.'}
     for index,name,student in [(1,'Vũ Gia Khải','2A202602786'),(2,'Phạm Văn Kiên','2A202602590')]:
         header=f'''# Báo cáo cá nhân — {name}
 
 - MSSV: {student}
 - Repository: https://github.com/vukhai248/K4-Track4-Day04-vadora-Sensor-Reality-Sprint
 - Nội dung kỹ thuật bên dưới dựa trên benchmark chung của nhóm, được chuẩn bị với hỗ trợ của Codex.
-- Phần việc cá nhân: thành viên bổ sung theo đóng góp thực tế trước khi nộp.
+- Phần phụ trách theo phân công: {roles[index]}
+- Phân công trên không phải xác nhận mọi việc đã được cá nhân tự thực hiện; thành viên cần kiểm tra và trình bày phần mình phụ trách.
 
 '''
         (reports/f'thanh-vien-{index}.md').write_text(header+report,encoding='utf-8')

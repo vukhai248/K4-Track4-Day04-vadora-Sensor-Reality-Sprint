@@ -4,7 +4,7 @@ Nhóm vadora hiện có 2 thành viên theo thông tin người dùng xác nhậ
 
 | STT | Họ tên | MSSV | Phần việc |
 |---|---|---|---|
-| 1 | Vũ Gia Khải | 2A202602786 | |
-| 2 | Phạm Văn Kiên | 2A202602590 | |
+| 1 | Vũ Gia Khải | 2A202602786 | Chốt bài toán và vị trí trong pipeline ADAS; phụ trách dữ liệu, cấu hình/cách chạy và phần trình bày problem–method–benchmark. |
+| 2 | Phạm Văn Kiên | 2A202602590 | Phụ trách rà soát bảng/plot, failure case, limitation và đề xuất engineering decision; trình bày failure–decision. |
 
-Phần việc cá nhân: hai thành viên tự bổ sung theo việc thực sự đã làm. Code, benchmark và dự thảo báo cáo được chuẩn bị với sự hỗ trợ của Codex; không tự gán đóng góp cho thành viên.
+Đây là phân công trách nhiệm cho hai thành viên, không phải xác nhận mỗi người đã tự viết/chạy toàn bộ code. Code, benchmark và bản thảo được chuẩn bị với hỗ trợ của Codex; hai thành viên cần đọc, kiểm tra và trình bày phần phụ trách của mình.

@@ -76,7 +76,8 @@ Kết quả tự đo: BREMOLA raw trung bình 277,34 → 159,94; 21/50 ảnh có
 - [Phạm Văn Kiên](reports/thanh-vien-2.md)
 - [Kịch bản pitch](reports/pitch.md)
 - [Checklist nộp bài](SUBMISSION_CHECKLIST.md)
+- [Vị trí camera quality monitor trong pipeline ADAS](docs/ADAS_PIPELINE.md)
 
 ## Nộp bài
-Mỗi thành viên nộp bản báo cáo riêng và cùng URL repository nhóm trên VLearn. Người học cần điền phần việc thực tế và kiểm tra ngoại lệ nhóm 2 người so với yêu cầu 5 người trong bản đề đã cung cấp.
+Mỗi thành viên nộp bản báo cáo riêng và cùng URL repository nhóm trên VLearn. Đã có phân công; người học cần kiểm tra đóng góp thực tế và ngoại lệ nhóm 2 người so với yêu cầu 5 người trong bản đề đã cung cấp.
 

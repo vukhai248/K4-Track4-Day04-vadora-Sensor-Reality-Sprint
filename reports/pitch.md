@@ -4,6 +4,8 @@
 
 Camera ADAS có thể vẫn có ảnh nhưng ảnh mờ. Nhóm muốn biết có thể dùng score từ chính ảnh để theo dõi chất lượng hay không. Bài thử tập trung average blur, không train model và chưa chạy detector.
 
+Block của nhóm là camera quality monitor: sau thu nhận ảnh/ISP và chạy song song camera perception. Score được đề xuất gửi tới sensor supervisor, phục vụ cảnh báo và policy tin cậy của fusion; không phải thuật toán xử lý radar/LiDAR. Xem sơ đồ trong docs/ADAS_PIPELINE.md. Chỉ block tính score offline đã được chạy trong lab.
+
 ## 0:35–1:20 — Method
 
 BREMOLA của Nam và cộng sự, 2025, nhận một ảnh và trả score không cần reference. Fourier A phản ánh phổ ảnh; Laplacian B phản ánh độ phức tạp; kết hợp A/sqrt(B) để bù ảnh hưởng cảnh. Nhóm so với A chưa bù và đo thêm Laplacian variance, saturation ratio, entropy. BREMOLA raw và score 0–100 là cùng một thông tin với thang đo khác nhau.
@@ -23,3 +25,8 @@ Theo dõi BREMOLA cùng các metric và ảnh/log hỗ trợ, chưa dùng một 
 ## Khi được hỏi đã chạy gì
 
 Mở metrics.csv, config.json và run.log trong results/average-blur-20261005-173207-032247/. Có thể chạy lại lệnh README trên cùng manifest ảnh. Chỉ trích số tự đo từ CSV; kết quả paper là nguồn riêng.
+
+## Phân công trình bày
+
+- Vũ Gia Khải: problem, vị trí block trong pipeline, method và benchmark.
+- Phạm Văn Kiên: failure case, limitation, engineering decision và trade-off.

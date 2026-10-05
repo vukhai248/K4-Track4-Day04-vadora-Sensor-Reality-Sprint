@@ -6,6 +6,8 @@ Camera ADAS có thể vẫn xuất ảnh nhưng ảnh suy giảm độ sắc né
 
 Mục tiêu là đo phản ứng của metric, không xác định camera hỏng vật lý hay chứng minh độ chính xác detector. Không có training hoặc inference detector trong phép thử.
 
+Vị trí tích hợp đề xuất: sau thu nhận ảnh/ISP, camera quality monitor chạy song song camera perception; score gắn frame/timestamp gửi tới sensor supervisor để ghi log/cảnh báo và hỗ trợ policy tin cậy trước fusion. Radar/LiDAR có nhánh perception riêng; không phải pipeline nối tiếp radar rồi camera. Đây là kiến trúc đề xuất, không phải hệ thống VinFast được xác minh. Xem [pipeline và nguồn tham khảo](../docs/ADAS_PIPELINE.md). Benchmark hiện tại chỉ kiểm thử offline block score, chưa chạy ISP thật, supervisor hoặc fusion.
+
 ## 2. Method
 
 Nguồn: Nam, Youn, Ha (2025), [BREMOLA, Vehicles 7(1), 8](https://www.mdpi.com/2624-8921/7/1/8), DOI 10.3390/vehicles7010008; [code công khai, commit 7ba26999](https://github.com/woongchan789/BREMOLA/blob/7ba26999c265692bb8e44c5a3f2d91c06746830f/bremola.py).

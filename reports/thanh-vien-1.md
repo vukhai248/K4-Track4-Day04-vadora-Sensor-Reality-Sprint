@@ -3,13 +3,16 @@
 - MSSV: 2A202602786
 - Repository: https://github.com/vukhai248/K4-Track4-Day04-vadora-Sensor-Reality-Sprint
 - Nội dung kỹ thuật bên dưới dựa trên benchmark chung của nhóm, được chuẩn bị với hỗ trợ của Codex.
-- Phần việc cá nhân: thành viên bổ sung theo đóng góp thực tế trước khi nộp.
+- Phần phụ trách theo phân công: Chốt bài toán và vị trí trong pipeline ADAS; phụ trách dữ liệu, cấu hình/cách chạy và phần trình bày problem–method–benchmark.
+- Phân công trên không phải xác nhận mọi việc đã được cá nhân tự thực hiện; thành viên cần kiểm tra và trình bày phần mình phụ trách.
 
 ## 1. Problem
 
 Camera ADAS có thể vẫn xuất ảnh nhưng ảnh suy giảm độ sắc nét. Nhóm kiểm tra lỗi blur bằng mô phỏng average blur trên cùng ảnh đường phố. Claim ban đầu: khi mức blur tăng, score độ sắc nét dự kiến giảm; việc bù complexity có thể giảm độ phân tán score giữa các cảnh.
 
 Mục tiêu là đo phản ứng của metric, không xác định camera hỏng vật lý hay chứng minh độ chính xác detector. Không có training hoặc inference detector trong phép thử.
+
+Vị trí tích hợp đề xuất: sau thu nhận ảnh/ISP, camera quality monitor chạy song song camera perception; score gắn frame/timestamp gửi tới sensor supervisor để ghi log/cảnh báo và hỗ trợ policy tin cậy trước fusion. Radar/LiDAR có nhánh perception riêng; không phải pipeline nối tiếp radar rồi camera. Đây là kiến trúc đề xuất, không phải hệ thống VinFast được xác minh. Xem [pipeline và nguồn tham khảo](../docs/ADAS_PIPELINE.md). Benchmark hiện tại chỉ kiểm thử offline block score, chưa chạy ISP thật, supervisor hoặc fusion.
 
 ## 2. Method
 
