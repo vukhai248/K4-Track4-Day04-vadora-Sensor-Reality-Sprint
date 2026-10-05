@@ -1,0 +1,75 @@
+{
+  "command": [
+    "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\.venv\\Scripts\\python.exe",
+    "src\\benchmark_camera.py",
+    "--limit",
+    "5"
+  ],
+  "source_method": "https://github.com/woongchan789/BREMOLA/blob/7ba26999c265692bb8e44c5a3f2d91c06746830f/bremola.py",
+  "method_note": "Operations adapted from public code; not an exact reproduction of all paper experiments.",
+  "selection": "first N files sorted by filename",
+  "image_count": 5,
+  "rows": 30,
+  "kernels": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11
+  ],
+  "resize_before_blur": [
+    1920,
+    1080
+  ],
+  "resize_interpolation": "INTER_LINEAR",
+  "border": "OpenCV BORDER_DEFAULT (REFLECT_101)",
+  "fourier": "A=count(14*log(1+abs(fftshift(fft2(gray))))>100)",
+  "complexity": "B=sum(Laplacian(gray,CV_8U,ksize=3))",
+  "bremola_raw": "A/sqrt(B); blank/invalid if B=0",
+  "bremola_0_100": "clip(bremola_raw/5,0,100); not a probability of camera health",
+  "laplacian_variance": "var(Laplacian(gray,CV_64F,ksize=3)); intensity-squared units",
+  "saturation_ratio": "fraction of grayscale pixels <=5 or >=250; dark/bright ratios also saved",
+  "entropy_bits": "Shannon entropy of 256-bin grayscale histogram, log base 2",
+  "summary_std": "population standard deviation (ddof=0); within each kernel across images",
+  "versions": {
+    "python": "3.13.9",
+    "opencv": "4.12.0",
+    "numpy": "2.2.6",
+    "matplotlib": "3.10.7",
+    "pillow": "11.3.0"
+  },
+  "inputs": [
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b1cebfb7-284f5117.jpg",
+      "sha256": "a78cb1df46bd660a580ba879a1bcf212b01088fe91579231aaf6009408833eb2",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b1d10d08-c35503b8.jpg",
+      "sha256": "8d3620675a33d756afe8d729a7e37a318d05a84a5eadad041c90bb24c5717724",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b1d7b3ac-36f2d3b7.jpg",
+      "sha256": "bbe61f01eb93afaea7dc4f83c6b14da3e9be0b7149a15db4038bbb6f283a7332",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b1d7b3ac-5744370e.jpg",
+      "sha256": "c4afe38b929cb40aec32df062f3452c97ab6e9af6bc4d1fcc1f04fc4e0768d7d",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b1d7b3ac-5af8623b.jpg",
+      "sha256": "188559c812138978f0cd7eb81bfeb657e3020c3543b620da51e7d6380fed4994",
+      "original_width": 1280,
+      "original_height": 720
+    }
+  ],
+  "detector_run": false
+}

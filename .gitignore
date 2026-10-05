@@ -2,3 +2,9 @@ __pycache__/
 *.pyc
 .venv/
 .env
+data/raw/
+data/annotations/bdd100k-mirror-samples.json
+docs/sources/
+tmp/
+results/**/images/
+results/**/*_comparison.png

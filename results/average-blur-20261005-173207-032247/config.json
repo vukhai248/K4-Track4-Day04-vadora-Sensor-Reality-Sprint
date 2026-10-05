@@ -1,0 +1,345 @@
+{
+  "command": [
+    "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\.venv\\Scripts\\python.exe",
+    "src\\benchmark_camera.py",
+    "--limit",
+    "50"
+  ],
+  "source_method": "https://github.com/woongchan789/BREMOLA/blob/7ba26999c265692bb8e44c5a3f2d91c06746830f/bremola.py",
+  "method_note": "Operations adapted from public code; not an exact reproduction of all paper experiments.",
+  "selection": "first N files sorted by filename",
+  "image_count": 50,
+  "rows": 300,
+  "kernels": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11
+  ],
+  "resize_before_blur": [
+    1920,
+    1080
+  ],
+  "resize_interpolation": "INTER_LINEAR",
+  "border": "OpenCV BORDER_DEFAULT (REFLECT_101)",
+  "fourier": "A=count(14*log(1+abs(fftshift(fft2(gray))))>100)",
+  "complexity": "B=sum(Laplacian(gray,CV_8U,ksize=3))",
+  "bremola_raw": "A/sqrt(B); blank/invalid if B=0",
+  "bremola_0_100": "clip(bremola_raw/5,0,100); not a probability of camera health",
+  "laplacian_variance": "var(Laplacian(gray,CV_64F,ksize=3)); intensity-squared units",
+  "saturation_ratio": "fraction of grayscale pixels <=5 or >=250; dark/bright ratios also saved",
+  "entropy_bits": "Shannon entropy of 256-bin grayscale histogram, log base 2",
+  "summary_std": "population standard deviation (ddof=0); within each kernel across images",
+  "versions": {
+    "python": "3.13.9",
+    "opencv": "4.12.0",
+    "numpy": "2.2.6",
+    "matplotlib": "3.10.7",
+    "pillow": "11.3.0"
+  },
+  "inputs": [
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b1cebfb7-284f5117.jpg",
+      "sha256": "a78cb1df46bd660a580ba879a1bcf212b01088fe91579231aaf6009408833eb2",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b1d10d08-c35503b8.jpg",
+      "sha256": "8d3620675a33d756afe8d729a7e37a318d05a84a5eadad041c90bb24c5717724",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b1d7b3ac-36f2d3b7.jpg",
+      "sha256": "bbe61f01eb93afaea7dc4f83c6b14da3e9be0b7149a15db4038bbb6f283a7332",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b1d7b3ac-5744370e.jpg",
+      "sha256": "c4afe38b929cb40aec32df062f3452c97ab6e9af6bc4d1fcc1f04fc4e0768d7d",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b1d7b3ac-5af8623b.jpg",
+      "sha256": "188559c812138978f0cd7eb81bfeb657e3020c3543b620da51e7d6380fed4994",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b1d7b3ac-995f9d8a.jpg",
+      "sha256": "c337c7e0e4f531bdfa954da6efa71b9d1cfb8a481a2ae2cefeb87e7d490c6f04",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b1dac7f7-6b2e0382.jpg",
+      "sha256": "0ae8f76c05b4d0ee91bb39efec9910d856e36959076bcbc821db44a65dfb4a61",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b1dce572-c6a8cb5e.jpg",
+      "sha256": "5a4fa150442a4ca183a623760d18d117bcd220a84d444a44c09925c29032ce6b",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b1df722f-57d21f3f.jpg",
+      "sha256": "9b0e0ae42123747cb1dae4f865d3f6dcf6bc0668dec73fec737729b65b8b8816",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b1df722f-5bcc3db7.jpg",
+      "sha256": "fb551bc6b119077267bf76d7555cc19533aa3c127411c5991252cf989705d1df",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b1e3e9f5-92377424.jpg",
+      "sha256": "4b7de7e438baf80a4219665b387f0b314710cf6bd941ffbb208ad7ae2fe2576f",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b1e8ad72-c3c79240.jpg",
+      "sha256": "ffc90b74f332e5af903fbbf71553d17c2619b8c25464e368d69a52e701ba9b11",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b1f0efd9-e900c6e5.jpg",
+      "sha256": "6e6e1508a217285110f5a4f72079c054e485b23cea47cc804c0280c0d51e3bde",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b1f4491b-97465266.jpg",
+      "sha256": "3a6c51de0f78e13d1ecd033d8db1ebdbe2fec022b48fc3f9c6c9f309d5e39cdf",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b1f62c41-ed0c6521.jpg",
+      "sha256": "c801ad268bb2b34f3844c81335c9f389222c949e6305c9f90514043971daf6d1",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b1ff4656-94ee8536.jpg",
+      "sha256": "7ac84dc904aa1d03c5854d2d00368e707e27439f372792225b742ad475515fcb",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b202cae2-672e61c5.jpg",
+      "sha256": "c0f46b84efb2d49e9ad56c25f6ebe19f552c6a2b24d2ccb18dd24c89f3780039",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b202cae2-f46c74a6.jpg",
+      "sha256": "7409abcae1e10bb1a42fb0e7f02215f542850f0abfef9896be72fe2a37673126",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b205eb4d-f84aaa1a.jpg",
+      "sha256": "4d916a726780772fdd09b4a7a7c45a5dd08a97bdb0fdfb83a1205fc75852b443",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b20841f9-cef732d5.jpg",
+      "sha256": "7bc9d8cac88bcb7e5e2de1c4f36768b79ac4b6fc5777a6613fa68e0814e8a91e",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b20b69d2-64b9cdb8.jpg",
+      "sha256": "17ccefed515311f76e11ca8d15bec9e6e6758b9098ec1a4809aba732b3f216a2",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b20b69d2-650e674d.jpg",
+      "sha256": "9022b0220b6b368a74d6a017c52d5f8dfd4d5675f712a90150c795f5c232ba2c",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b20b69d2-6e2b9e73.jpg",
+      "sha256": "40e279fd52b3d70d39a0f290b8f5ff87bcff24e24c9bcea6c0c53e6db6cb212b",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b20b69d2-7767e6b6.jpg",
+      "sha256": "6b7e7e9757e826c86794177b07b2a83de30e48f55c852d1d349c281fcfb99f48",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b20b69d2-bd242bf0.jpg",
+      "sha256": "3327443555a4a6f560d6d7d6ce55e728e1e427e8de327832150b5ab934fecf98",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b20b69d2-ca16c907.jpg",
+      "sha256": "a8500fa60855c29325d16845f52fe7904e09037a709e28f391e2226db6e6b5af",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b20b69d2-e31380a7.jpg",
+      "sha256": "dc7699f33ce993c0c9d95bf5ca7a4edd2485d6369d2da49472205eb82e8a11e9",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b20b69d2-ffc1d6af.jpg",
+      "sha256": "657b6aae4e56c2fc38892016be5f6d4ae8e2b6e5911f452e86a2fd0933961c30",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b20d494a-cdebe83e.jpg",
+      "sha256": "34f31e689e6ecb6780287975ee0cd125195a7232edaff29185763d5851cbf9a4",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b20e291a-6012d836.jpg",
+      "sha256": "3d77215e4d8d7b6546883bd9020755905ba90f7988b2442a1880661396a48733",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b20ff95c-b9444127.jpg",
+      "sha256": "addc140d172b741c7385374037544b2b1e79ff49afd01e0bc9b6b956dc380e1c",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b2169b74-fa197951.jpg",
+      "sha256": "13d13c736449bcc7a211ddc0ed98f8f9c0059d248f126f8ddd1dcdb218ed48f3",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b2208b0f-2796a692.jpg",
+      "sha256": "9b6e67078e904741f28cc683e5e238616db9ea87778a7acd14012e3a0a944843",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b231a630-c4522992.jpg",
+      "sha256": "806ee4a64abbdd3e7ec7b8cadac35e7bb4d95cf2198276fe7aafda56d53d581e",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b2331b83-a28e6b57.jpg",
+      "sha256": "43b86a4b436ea283a678a138f3328049e9a7ae19aec4db8d43b5f5423a842800",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b245e52e-0a0e4e69.jpg",
+      "sha256": "20498bd700e5b6256ed8e268207498b458ff23057db67ab91b8da6bc03853879",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b24702e3-0456c83c.jpg",
+      "sha256": "904ef8ad26c27f0be3f2be068be94937330425ba795a2c688e112e7178cb2e24",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b24702e3-e6f33768.jpg",
+      "sha256": "8ffefdd71f0d7bd4ec5f256dbc94b226927ae895cea0236bdb21c7c96e0340ad",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b24702e3-f56e0731.jpg",
+      "sha256": "de2f9246befd752ae5cb8b90cd3235e7e214134caf66b4fa4f6c011df7a04352",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b24b3585-221ac8ac.jpg",
+      "sha256": "7ef3ae42eca308bd81b5208a1eab5b85e519bb885f0177dc183d1f803f7b273a",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b24f7455-e8c55d6a.jpg",
+      "sha256": "6560c454a267cf1d85e4756ead69cc2f575313d9aba1b2b88585a119c8113e89",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b250fb0c-01a1b8d3.jpg",
+      "sha256": "b7067b9695cafc5010b42873c704f637e280b17c2c98694f1b6f1c510fcb009b",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b251064f-8d92db81.jpg",
+      "sha256": "eb63eb2ef7202f3e10d4fa259345d9cd6635a0931a647fe495fec9c5d895fae7",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b259c5e1-cda39ef9.jpg",
+      "sha256": "1c093fcc1855e78238397be727682127c0be0bb4af7d4a3b6b689d110e599d8a",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b25fdb41-4644e3f7.jpg",
+      "sha256": "1f05612e4ca42aaf29915ec01d7e7707232fa2daff4b05d1b4c583a5e43e28d5",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b26331b9-102f5d9a.jpg",
+      "sha256": "40b82cafc941ac62f2cbf6147df1b1b54453329c34dad950a2cded1855618a2a",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b265b9cf-2d517da6.jpg",
+      "sha256": "58d7db189406fcde83ac94a29f210fd05ee27e911de7c8d59b23f2aacd79a6a2",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b2694461-db4f4470.jpg",
+      "sha256": "e466a674514c9aa205fb43ac35285e0d3da56ded04f7c1c9c9328b7ba6c0b29d",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b2715214-13e3dd85.jpg",
+      "sha256": "2476cafc351b26bc4f383a242703c383b461d0b61eb2c88a9bbacc9f9eac2431",
+      "original_width": 1280,
+      "original_height": 720
+    },
+    {
+      "file": "D:\\create\\vin\\K4-Track4-Day04-vadora-Sensor-Reality-Sprint\\data\\raw\\b2715214-d38332ea.jpg",
+      "sha256": "4cc74cf6150e5271265b4967c3a71dc6a8bf756f21f3953a9f83131a03b09e91",
+      "original_width": 1280,
+      "original_height": 720
+    }
+  ],
+  "detector_run": false
+}

@@ -1,0 +1,462 @@
+{
+  "dataset": "dgural/bdd100k",
+  "revision": "c2e7f266756bcd07b87f1a45a35937c8eac20241",
+  "source_samples_count": 10000,
+  "eligible_samples_count": 1756,
+  "selection": "weather=clear, timeofday=daytime, >=1 car/pedestrian/bicycle; sort filepath; first 50",
+  "count": 50,
+  "download_date": "2026-10-05",
+  "samples_json_sha256": "1e8853904e2926c434557bb90a36b1638ac03ebb77adfc21f04d821a6a998a09",
+  "images": [
+    {
+      "image_id": "b1cebfb7-284f5117",
+      "local_path": "data/raw/b1cebfb7-284f5117.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b1cebfb7-284f5117.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 79380,
+      "sha256": "a78cb1df46bd660a580ba879a1bcf212b01088fe91579231aaf6009408833eb2"
+    },
+    {
+      "image_id": "b1d10d08-c35503b8",
+      "local_path": "data/raw/b1d10d08-c35503b8.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b1d10d08-c35503b8.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 81441,
+      "sha256": "8d3620675a33d756afe8d729a7e37a318d05a84a5eadad041c90bb24c5717724"
+    },
+    {
+      "image_id": "b1d7b3ac-36f2d3b7",
+      "local_path": "data/raw/b1d7b3ac-36f2d3b7.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b1d7b3ac-36f2d3b7.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 59013,
+      "sha256": "bbe61f01eb93afaea7dc4f83c6b14da3e9be0b7149a15db4038bbb6f283a7332"
+    },
+    {
+      "image_id": "b1d7b3ac-5744370e",
+      "local_path": "data/raw/b1d7b3ac-5744370e.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b1d7b3ac-5744370e.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 49988,
+      "sha256": "c4afe38b929cb40aec32df062f3452c97ab6e9af6bc4d1fcc1f04fc4e0768d7d"
+    },
+    {
+      "image_id": "b1d7b3ac-5af8623b",
+      "local_path": "data/raw/b1d7b3ac-5af8623b.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b1d7b3ac-5af8623b.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 43170,
+      "sha256": "188559c812138978f0cd7eb81bfeb657e3020c3543b620da51e7d6380fed4994"
+    },
+    {
+      "image_id": "b1d7b3ac-995f9d8a",
+      "local_path": "data/raw/b1d7b3ac-995f9d8a.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b1d7b3ac-995f9d8a.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 76972,
+      "sha256": "c337c7e0e4f531bdfa954da6efa71b9d1cfb8a481a2ae2cefeb87e7d490c6f04"
+    },
+    {
+      "image_id": "b1dac7f7-6b2e0382",
+      "local_path": "data/raw/b1dac7f7-6b2e0382.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b1dac7f7-6b2e0382.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 83205,
+      "sha256": "0ae8f76c05b4d0ee91bb39efec9910d856e36959076bcbc821db44a65dfb4a61"
+    },
+    {
+      "image_id": "b1dce572-c6a8cb5e",
+      "local_path": "data/raw/b1dce572-c6a8cb5e.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b1dce572-c6a8cb5e.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 85105,
+      "sha256": "5a4fa150442a4ca183a623760d18d117bcd220a84d444a44c09925c29032ce6b"
+    },
+    {
+      "image_id": "b1df722f-57d21f3f",
+      "local_path": "data/raw/b1df722f-57d21f3f.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b1df722f-57d21f3f.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 47126,
+      "sha256": "9b0e0ae42123747cb1dae4f865d3f6dcf6bc0668dec73fec737729b65b8b8816"
+    },
+    {
+      "image_id": "b1df722f-5bcc3db7",
+      "local_path": "data/raw/b1df722f-5bcc3db7.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b1df722f-5bcc3db7.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 58850,
+      "sha256": "fb551bc6b119077267bf76d7555cc19533aa3c127411c5991252cf989705d1df"
+    },
+    {
+      "image_id": "b1e3e9f5-92377424",
+      "local_path": "data/raw/b1e3e9f5-92377424.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b1e3e9f5-92377424.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 62415,
+      "sha256": "4b7de7e438baf80a4219665b387f0b314710cf6bd941ffbb208ad7ae2fe2576f"
+    },
+    {
+      "image_id": "b1e8ad72-c3c79240",
+      "local_path": "data/raw/b1e8ad72-c3c79240.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b1e8ad72-c3c79240.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 50811,
+      "sha256": "ffc90b74f332e5af903fbbf71553d17c2619b8c25464e368d69a52e701ba9b11"
+    },
+    {
+      "image_id": "b1f0efd9-e900c6e5",
+      "local_path": "data/raw/b1f0efd9-e900c6e5.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b1f0efd9-e900c6e5.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 72938,
+      "sha256": "6e6e1508a217285110f5a4f72079c054e485b23cea47cc804c0280c0d51e3bde"
+    },
+    {
+      "image_id": "b1f4491b-97465266",
+      "local_path": "data/raw/b1f4491b-97465266.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b1f4491b-97465266.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 76917,
+      "sha256": "3a6c51de0f78e13d1ecd033d8db1ebdbe2fec022b48fc3f9c6c9f309d5e39cdf"
+    },
+    {
+      "image_id": "b1f62c41-ed0c6521",
+      "local_path": "data/raw/b1f62c41-ed0c6521.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b1f62c41-ed0c6521.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 100080,
+      "sha256": "c801ad268bb2b34f3844c81335c9f389222c949e6305c9f90514043971daf6d1"
+    },
+    {
+      "image_id": "b1ff4656-94ee8536",
+      "local_path": "data/raw/b1ff4656-94ee8536.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b1ff4656-94ee8536.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 82591,
+      "sha256": "7ac84dc904aa1d03c5854d2d00368e707e27439f372792225b742ad475515fcb"
+    },
+    {
+      "image_id": "b202cae2-672e61c5",
+      "local_path": "data/raw/b202cae2-672e61c5.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b202cae2-672e61c5.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 70489,
+      "sha256": "c0f46b84efb2d49e9ad56c25f6ebe19f552c6a2b24d2ccb18dd24c89f3780039"
+    },
+    {
+      "image_id": "b202cae2-f46c74a6",
+      "local_path": "data/raw/b202cae2-f46c74a6.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b202cae2-f46c74a6.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 64215,
+      "sha256": "7409abcae1e10bb1a42fb0e7f02215f542850f0abfef9896be72fe2a37673126"
+    },
+    {
+      "image_id": "b205eb4d-f84aaa1a",
+      "local_path": "data/raw/b205eb4d-f84aaa1a.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b205eb4d-f84aaa1a.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 68292,
+      "sha256": "4d916a726780772fdd09b4a7a7c45a5dd08a97bdb0fdfb83a1205fc75852b443"
+    },
+    {
+      "image_id": "b20841f9-cef732d5",
+      "local_path": "data/raw/b20841f9-cef732d5.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b20841f9-cef732d5.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 57911,
+      "sha256": "7bc9d8cac88bcb7e5e2de1c4f36768b79ac4b6fc5777a6613fa68e0814e8a91e"
+    },
+    {
+      "image_id": "b20b69d2-64b9cdb8",
+      "local_path": "data/raw/b20b69d2-64b9cdb8.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b20b69d2-64b9cdb8.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 54344,
+      "sha256": "17ccefed515311f76e11ca8d15bec9e6e6758b9098ec1a4809aba732b3f216a2"
+    },
+    {
+      "image_id": "b20b69d2-650e674d",
+      "local_path": "data/raw/b20b69d2-650e674d.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b20b69d2-650e674d.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 90783,
+      "sha256": "9022b0220b6b368a74d6a017c52d5f8dfd4d5675f712a90150c795f5c232ba2c"
+    },
+    {
+      "image_id": "b20b69d2-6e2b9e73",
+      "local_path": "data/raw/b20b69d2-6e2b9e73.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b20b69d2-6e2b9e73.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 75183,
+      "sha256": "40e279fd52b3d70d39a0f290b8f5ff87bcff24e24c9bcea6c0c53e6db6cb212b"
+    },
+    {
+      "image_id": "b20b69d2-7767e6b6",
+      "local_path": "data/raw/b20b69d2-7767e6b6.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b20b69d2-7767e6b6.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 81785,
+      "sha256": "6b7e7e9757e826c86794177b07b2a83de30e48f55c852d1d349c281fcfb99f48"
+    },
+    {
+      "image_id": "b20b69d2-bd242bf0",
+      "local_path": "data/raw/b20b69d2-bd242bf0.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b20b69d2-bd242bf0.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 80908,
+      "sha256": "3327443555a4a6f560d6d7d6ce55e728e1e427e8de327832150b5ab934fecf98"
+    },
+    {
+      "image_id": "b20b69d2-ca16c907",
+      "local_path": "data/raw/b20b69d2-ca16c907.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b20b69d2-ca16c907.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 77279,
+      "sha256": "a8500fa60855c29325d16845f52fe7904e09037a709e28f391e2226db6e6b5af"
+    },
+    {
+      "image_id": "b20b69d2-e31380a7",
+      "local_path": "data/raw/b20b69d2-e31380a7.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b20b69d2-e31380a7.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 66914,
+      "sha256": "dc7699f33ce993c0c9d95bf5ca7a4edd2485d6369d2da49472205eb82e8a11e9"
+    },
+    {
+      "image_id": "b20b69d2-ffc1d6af",
+      "local_path": "data/raw/b20b69d2-ffc1d6af.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b20b69d2-ffc1d6af.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 82860,
+      "sha256": "657b6aae4e56c2fc38892016be5f6d4ae8e2b6e5911f452e86a2fd0933961c30"
+    },
+    {
+      "image_id": "b20d494a-cdebe83e",
+      "local_path": "data/raw/b20d494a-cdebe83e.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b20d494a-cdebe83e.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 39664,
+      "sha256": "34f31e689e6ecb6780287975ee0cd125195a7232edaff29185763d5851cbf9a4"
+    },
+    {
+      "image_id": "b20e291a-6012d836",
+      "local_path": "data/raw/b20e291a-6012d836.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b20e291a-6012d836.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 73249,
+      "sha256": "3d77215e4d8d7b6546883bd9020755905ba90f7988b2442a1880661396a48733"
+    },
+    {
+      "image_id": "b20ff95c-b9444127",
+      "local_path": "data/raw/b20ff95c-b9444127.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b20ff95c-b9444127.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 68529,
+      "sha256": "addc140d172b741c7385374037544b2b1e79ff49afd01e0bc9b6b956dc380e1c"
+    },
+    {
+      "image_id": "b2169b74-fa197951",
+      "local_path": "data/raw/b2169b74-fa197951.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b2169b74-fa197951.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 69985,
+      "sha256": "13d13c736449bcc7a211ddc0ed98f8f9c0059d248f126f8ddd1dcdb218ed48f3"
+    },
+    {
+      "image_id": "b2208b0f-2796a692",
+      "local_path": "data/raw/b2208b0f-2796a692.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b2208b0f-2796a692.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 70983,
+      "sha256": "9b6e67078e904741f28cc683e5e238616db9ea87778a7acd14012e3a0a944843"
+    },
+    {
+      "image_id": "b231a630-c4522992",
+      "local_path": "data/raw/b231a630-c4522992.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b231a630-c4522992.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 69732,
+      "sha256": "806ee4a64abbdd3e7ec7b8cadac35e7bb4d95cf2198276fe7aafda56d53d581e"
+    },
+    {
+      "image_id": "b2331b83-a28e6b57",
+      "local_path": "data/raw/b2331b83-a28e6b57.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b2331b83-a28e6b57.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 65025,
+      "sha256": "43b86a4b436ea283a678a138f3328049e9a7ae19aec4db8d43b5f5423a842800"
+    },
+    {
+      "image_id": "b245e52e-0a0e4e69",
+      "local_path": "data/raw/b245e52e-0a0e4e69.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b245e52e-0a0e4e69.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 58064,
+      "sha256": "20498bd700e5b6256ed8e268207498b458ff23057db67ab91b8da6bc03853879"
+    },
+    {
+      "image_id": "b24702e3-0456c83c",
+      "local_path": "data/raw/b24702e3-0456c83c.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b24702e3-0456c83c.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 75042,
+      "sha256": "904ef8ad26c27f0be3f2be068be94937330425ba795a2c688e112e7178cb2e24"
+    },
+    {
+      "image_id": "b24702e3-e6f33768",
+      "local_path": "data/raw/b24702e3-e6f33768.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b24702e3-e6f33768.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 75472,
+      "sha256": "8ffefdd71f0d7bd4ec5f256dbc94b226927ae895cea0236bdb21c7c96e0340ad"
+    },
+    {
+      "image_id": "b24702e3-f56e0731",
+      "local_path": "data/raw/b24702e3-f56e0731.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b24702e3-f56e0731.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 82191,
+      "sha256": "de2f9246befd752ae5cb8b90cd3235e7e214134caf66b4fa4f6c011df7a04352"
+    },
+    {
+      "image_id": "b24b3585-221ac8ac",
+      "local_path": "data/raw/b24b3585-221ac8ac.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b24b3585-221ac8ac.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 56822,
+      "sha256": "7ef3ae42eca308bd81b5208a1eab5b85e519bb885f0177dc183d1f803f7b273a"
+    },
+    {
+      "image_id": "b24f7455-e8c55d6a",
+      "local_path": "data/raw/b24f7455-e8c55d6a.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b24f7455-e8c55d6a.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 80419,
+      "sha256": "6560c454a267cf1d85e4756ead69cc2f575313d9aba1b2b88585a119c8113e89"
+    },
+    {
+      "image_id": "b250fb0c-01a1b8d3",
+      "local_path": "data/raw/b250fb0c-01a1b8d3.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b250fb0c-01a1b8d3.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 76882,
+      "sha256": "b7067b9695cafc5010b42873c704f637e280b17c2c98694f1b6f1c510fcb009b"
+    },
+    {
+      "image_id": "b251064f-8d92db81",
+      "local_path": "data/raw/b251064f-8d92db81.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b251064f-8d92db81.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 67948,
+      "sha256": "eb63eb2ef7202f3e10d4fa259345d9cd6635a0931a647fe495fec9c5d895fae7"
+    },
+    {
+      "image_id": "b259c5e1-cda39ef9",
+      "local_path": "data/raw/b259c5e1-cda39ef9.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b259c5e1-cda39ef9.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 71255,
+      "sha256": "1c093fcc1855e78238397be727682127c0be0bb4af7d4a3b6b689d110e599d8a"
+    },
+    {
+      "image_id": "b25fdb41-4644e3f7",
+      "local_path": "data/raw/b25fdb41-4644e3f7.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b25fdb41-4644e3f7.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 116150,
+      "sha256": "1f05612e4ca42aaf29915ec01d7e7707232fa2daff4b05d1b4c583a5e43e28d5"
+    },
+    {
+      "image_id": "b26331b9-102f5d9a",
+      "local_path": "data/raw/b26331b9-102f5d9a.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b26331b9-102f5d9a.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 72718,
+      "sha256": "40b82cafc941ac62f2cbf6147df1b1b54453329c34dad950a2cded1855618a2a"
+    },
+    {
+      "image_id": "b265b9cf-2d517da6",
+      "local_path": "data/raw/b265b9cf-2d517da6.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b265b9cf-2d517da6.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 84736,
+      "sha256": "58d7db189406fcde83ac94a29f210fd05ee27e911de7c8d59b23f2aacd79a6a2"
+    },
+    {
+      "image_id": "b2694461-db4f4470",
+      "local_path": "data/raw/b2694461-db4f4470.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b2694461-db4f4470.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 65054,
+      "sha256": "e466a674514c9aa205fb43ac35285e0d3da56ded04f7c1c9c9328b7ba6c0b29d"
+    },
+    {
+      "image_id": "b2715214-13e3dd85",
+      "local_path": "data/raw/b2715214-13e3dd85.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b2715214-13e3dd85.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 67081,
+      "sha256": "2476cafc351b26bc4f383a242703c383b461d0b61eb2c88a9bbacc9f9eac2431"
+    },
+    {
+      "image_id": "b2715214-d38332ea",
+      "local_path": "data/raw/b2715214-d38332ea.jpg",
+      "source_url": "https://huggingface.co/datasets/dgural/bdd100k/resolve/c2e7f266756bcd07b87f1a45a35937c8eac20241/data/b2715214-d38332ea.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 84846,
+      "sha256": "4cc74cf6150e5271265b4967c3a71dc6a8bf756f21f3953a9f83131a03b09e91"
+    }
+  ]
+}

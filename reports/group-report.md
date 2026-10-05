@@ -1,9 +1,4 @@
-# Báo cáo cá nhân — Phạm Văn Kiên
-
-- MSSV: 2A202602590
-- Repository: https://github.com/vukhai248/K4-Track4-Day04-vadora-Sensor-Reality-Sprint
-- Nội dung kỹ thuật bên dưới dựa trên benchmark chung của nhóm, được chuẩn bị với hỗ trợ của Codex.
-- Phần việc cá nhân: thành viên bổ sung theo đóng góp thực tế trước khi nộp.
+# Báo cáo nhóm vadora — T1
 
 ## 1. Problem
 
